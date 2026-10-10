@@ -1,0 +1,6 @@
+{
+  "name": "GullyGames",
+  "description": "Open-weight AI powered outdoor micro-adventures and collaborative games for friends, campuses, and groups to touch grass.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

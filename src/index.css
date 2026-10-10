@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: 'Outfit', sans-serif;
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --color-paper: #F5F1E8;
+  --color-paper-light: #FAF8F2;
+  --color-paper-muted: #ECE5D8;
+  --color-paper-border: #E0D7C6;
+  --color-forest: #23483D;
+  --color-forest-dark: #19342C;
+  --color-forest-light: #326253;
+  --color-coral: #E9785B;
+  --color-coral-dark: #D66347;
+  --color-coral-light: #F28C72;
+}
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  background-color: #F5F1E8;
+  color: #23483D;
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Subtle organic grain overlay for tactile outdoor paper feel */
+.bg-grain {
+  background-image: radial-gradient(rgba(35, 72, 61, 0.05) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Custom scrollbar matching paper aesthetic */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F5F1E8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D7CEBE;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B8AC98;
+}
+
+/* Focus styles */
+*:focus-visible {
+  outline: 2px solid #E9785B;
+  outline-offset: 2px;
+}
