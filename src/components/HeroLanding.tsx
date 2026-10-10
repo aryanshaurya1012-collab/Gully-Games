@@ -1,6 +1,8 @@
 import React from 'react';
 import { Sparkles, ArrowRight, Sun, Users, Clock, ShieldCheck, PhoneOff, TreePine, MapPin } from 'lucide-react';
 import { GameActivity } from '../types/game.js';
+import heroOutdoorFriendsImg from '../assets/images/hero_outdoor_friends_1791631715635.jpg';
+import pocketModePocketImg from '../assets/images/pocket_mode_pocket_1791631730451.jpg';
 
 interface HeroLandingProps {
   onStartSetup: () => void;
@@ -85,7 +87,7 @@ export const HeroLanding: React.FC<HeroLandingProps> = ({
             <div className="lg:col-span-5 relative">
               <div className="relative rounded-2xl overflow-hidden border border-[#23483D]/15 shadow-xl bg-[#ECE5D8] aspect-[16/10] lg:aspect-[4/3]">
                 <img
-                  src="/src/assets/images/hero_outdoor_friends_1791631715635.jpg"
+                  src={heroOutdoorFriendsImg}
                   alt="Friends laughing together on a sunlit university campus lawn"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
@@ -181,7 +183,7 @@ export const HeroLanding: React.FC<HeroLandingProps> = ({
           <div className="lg:col-span-5">
             <div className="rounded-2xl overflow-hidden border border-white/20 shadow-2xl bg-[#19342C] aspect-[4/3]">
               <img
-                src="/src/assets/images/pocket_mode_pocket_1791631730451.jpg"
+                src={pocketModePocketImg}
                 alt="Phone resting safely in a canvas jacket pocket while friends gather outside"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
